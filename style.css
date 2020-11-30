@@ -24,14 +24,14 @@
 
 .content {
   height: 500px;
-  padding-top: 75px;
+  padding: 75px 600px 0 0;
   background: 100% 25% no-repeat url('img/woman.png');
   background-size: 564px 464px;
 }
 
 .content__title {
   margin: 0;
-  padding: 0 550px 30px 0;
+  padding: 0 0 30px 0;
   color: #fff;
   font: 800 45px/55px 'gilroy-extrabold', arial, helvetica, sans-serif;
 }
@@ -45,7 +45,7 @@
 
 .content__text {
   margin: 0;
-  padding:0 550px 50px 0;
+  padding: 0 0 50px 0;
   color: #fff;
   font: 300 20px/23px 'gilroy-light', arial, helvetica, sans-serif;
 
@@ -65,17 +65,18 @@
 
 .main__title {
   display: block;
-  margin: 55px 0 0 535px;
+  margin: 55px 0 0 35%;
   font: 800 40px/50px 'gilroy-extrabold', arial, helvetica, sans-serif;
 }
 
 .container {
   display: flex;
+  justify-content: center;
 }
 
 .first-block {
   display: block;
-  margin: 30px 0 0 130px;
+  margin-top: 30px;
   width: 380px;
   height: 400px;
   box-shadow: 0 0 30px #C0C0C0;
@@ -164,18 +165,21 @@
 
 .main__caption {
   margin: 0;
-  padding: 55px 0 30px 520px;
+  padding: 55px 0 30px 35%;
   font: 800 40px/49px 'gilroy-extrabold', arial, helvetica, sans-serif;
 }
 
 p.main__desc {
-  margin: 0 0 55px 10px;
+  margin: 0 10% 55px 0;
   font: 300 30px/35px 'gilroy-light', arial, helvetica, sans-serif;
   text-align: center;
 }
 
 .apply {
   background-color: #F0FBFF;
+}
+
+.apply {
   height: 590px;
 }
 
@@ -232,6 +236,7 @@ p.main__desc {
 }
 
 @media (max-width: 770px ) {
+  
   .wrapper {
     width: 81%;
     height: 595px;
@@ -247,7 +252,7 @@ p.main__desc {
 
   .content {
     height: 460px;
-    padding-top: 0;
+    padding: 0;
     background-position: bottom;
     background-size: 260px 213px;
   }
@@ -276,13 +281,15 @@ p.main__desc {
   }
 
   .main__title {
-    margin: 55px 66px 30px 66px;
+    margin: 55px 0 30px 30%;
     font-size: 20px;
     line-height: 25px;
   }
 
   .container {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
 
   .first-block {
@@ -293,7 +300,7 @@ p.main__desc {
   }
 
   .medal {
-    padding: 42px 87px 10px 87px;
+    padding: 42px 0 10px 35%;
     width: 85px;
     height: 85px;
   }
@@ -318,7 +325,7 @@ p.main__desc {
   }
   
   .case {
-    padding: 37px 87px 10px 87px;
+    padding: 37px 0 10px 35%;
     width: 85px;
     height: 85px;
   }
@@ -343,7 +350,7 @@ p.main__desc {
   }
   
   .money {
-    padding: 42px 88px 10px 86px;
+    padding: 42px 0 10px 35%;
     width: 85px;
     height: 85px;
   }
@@ -361,7 +368,7 @@ p.main__desc {
   }
 
   .main__caption {
-    padding: 0 0 30px 60px;
+    padding: 0 0 30px 25%;
     font-size: 20px;
     line-height: 25px;
   }
@@ -378,14 +385,14 @@ p.main__desc {
   }
 
   .apply__title {
-    padding: 45px 30px 25px 30px;
+    padding: 45px 0 25px 10%;
     font-size: 20px;
     line-height: 25px;
     text-align: center;
   }
   
   .name {
-    margin: 0 0 10px 30px;
+    margin: 0 0 10px 10%;
     padding-left: 17px;
     width: 240px;
     height: 45px;
@@ -394,7 +401,7 @@ p.main__desc {
     }
   
   .mail {
-    margin: 0 0 35px 30px;
+    margin: 0 0 35px 10%;
     padding-left: 17px;
     width: 240px;
     height: 45px;
@@ -404,7 +411,7 @@ p.main__desc {
   
   .apply__button {
     padding: 16px 90px;
-    margin: 0 0 45px 30px;
+    margin: 0 0 45px 10%;
     font-size: 10px;
     line-height: 12px;
   }
@@ -421,7 +428,7 @@ p.main__desc {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1400px) {
+@media (min-width: 770px) and (max-width: 1100px) {
   .wrapper {
     width: 85%;
     height: 700px;
@@ -429,13 +436,13 @@ p.main__desc {
   
   .content {
     height: 500px;
-    padding-top: 75px;
+    padding: 75px 500px 0 0;
     background: 100% 15% no-repeat url('img/woman.png');
     background-size: 430px 364px;
   }
   
   .content__title {
-    padding: 0 350px 30px 0;
+    padding: 0 0 30px 0;
     font-size: 35px;
     line-height: 40px;
   }
@@ -447,7 +454,7 @@ p.main__desc {
   }
   
   .content__text {
-    padding:0 450px 50px 0;
+    padding:0 0 50px 0;
     font-size: 15px;
     line-height: 18px;
   }
@@ -459,19 +466,25 @@ p.main__desc {
   }
 
   .main__title {
-    margin: 45px 0 0 370px;
+    margin: 45px 0 0 40%;
     font-size: 30px;
     line-height: 40px;
   }
 
+  .container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+
   .first-block {
-    margin: 20px 0 0 80px;
+    margin: 20px 0 0 60px;
     width: 280px;
     height: 300px;
   }
   
   .medal {
-    padding: 25px 0 15px 100px;
+    padding: 25px 0 15px 35%;
     width: 90px;
     height: 90px;
   }
@@ -495,7 +508,7 @@ p.main__desc {
   }
 
   .case {
-    padding: 20px 0 15px 100px;
+    padding: 20px 0 15px 35%;
     width: 90px;
     height: 90px;
   }
@@ -519,7 +532,7 @@ p.main__desc {
   }
   
   .money {
-    padding: 10px 0 15px 90px;
+    padding: 10px 0 15px 35%;
     width: 100px;
     height: 100px;
   }
@@ -537,7 +550,7 @@ p.main__desc {
   }
 
   .main__caption {
-    padding: 45px 0 20px 370px;
+    padding: 45px 0 20px 40%;
     font-size: 30px;
     line-height: 40px;
   }
@@ -549,13 +562,13 @@ p.main__desc {
   }
   
   .apply {
-    height: 400px;
+    height: 450px;
   }
   
   .apply__title {
-    padding: 30px 0 30px 200px;
+    padding: 30px 0 30px 20%;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 40px;
   }
   
   .name {
@@ -592,7 +605,13 @@ p.main__desc {
     font-size: 10px;
     line-height: 13px;
   }
-  
-  
-  
 }
+
+  @media (min-width: 1100px) and (max-width: 1400px) {
+
+    .container {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+    }
+  }
